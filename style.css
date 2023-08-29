@@ -1,0 +1,78 @@
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: #f39c12;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+
+    display: grid;
+    place-items: center;
+}
+
+.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: -22.5px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 45px;
+  height: 45px;
+}
+
+.carousel .pre {
+  position: absolute;
+  top: 0;
+  right: 56%;
+  height: 45px;
+  text-shadow: 2px 2px 2px #e67e22;
+}
+
+.carousel .change_outer {
+  position: absolute;
+  top: 0;
+  left: 46%;
+  text-align: left;
+  height: 45px;
+  overflow: hidden;
+}
+
+.carousel .change_outer .change_inner {
+  position: relative;
+  animation: rotate 8s ease-in-out infinite;
+}
+.carousel .change_outer .element {
+  display: block;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px #e67e22;
+}
+
+@keyframes rotate {
+  0%, 20% {
+    transform: translateY(0);
+  }
+  25%, 45% {
+    transform: translateY(-45px);
+  }
+  50%, 70% {
+    transform: translateY(-90px);
+  }
+  75%, 95% {
+    transform: translateY(-135px);
+  }
+  100% {
+    transform: translateY(-180px);
+  }
+}
